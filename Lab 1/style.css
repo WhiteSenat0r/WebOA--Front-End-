@@ -63,6 +63,11 @@ div{
     text-underline-offset: 10px;
 }
 
+.last{
+    margin-bottom: 0px !important;
+    border-bottom-color: rgb(235, 230, 160);
+}
+
 .line-example{
     width: 21em;
     border-width: 65px;
