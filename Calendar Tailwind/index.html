@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind calendar project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body class="p-2">
+        <div class="container mx-auto p-4 shadow-md shadow-gray-500 rounded-lg overflow-x-auto">
+            <div class="grid grid-cols-2 gap-2">
+                <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                    Розклад занять
+                </div>
+                <div class="grid place-content-end">
+                    <input type="date" id="birthday" class="border-2 border-dashed sm:text-base rounded-lg p-1" name="birthday">
+                </div>
+                <div class="font-bold sm:text-md text-gray-500 pl-2">
+                    Понеділок, 1 січня 2023
+                </div>
+            </div>
+            <div class="p-2">
+                <hr>
+            </div>
+            <ul>
+                <li class="p-2">
+                    <div class="container mx-auto w-auto p-4 shadow-md shadow-gray-500 rounded-lg bg-blue-200">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                                <svg class="h-[1em] w-[1em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 1L14 6V17L19 12.5V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5M10 18.41C8.75 18.09 7.5 18 6.5 18C5.44 18 4.18 18.19 3 18.5V7.13C3.91 6.73 5.14 6.5 6.5 6.5C7.86 6.5 9.09 6.73 10 7.13V18.41Z" />
+                                </svg>
+                                Назва предмету (Практична робота) 
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" />
+                                </svg>
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" />
+                                </svg>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.09 20.21,11.09 20.42,11.3L21.7,12.58C21.91,12.79 21.91,13.14 21.7,13.35M12,18.94L18.06,12.88L20.11,14.93L14.06,21H12V18.94M12,14C7.58,14 4,15.79 4,18V20H10V18.11L14,14.11C13.34,14.03 12.67,14 12,14M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4Z" />
+                                </svg>
+                                Викладач В. В.
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 pl-2 pt-2">
+                                №101
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 hover:text-gray-400 pl-2 pt-1">
+                                <a href="">Google Meet</a>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+                                </svg>
+                                09.00 - 10.20
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="p-2">
+                        <hr>
+                    </div>
+                </li>
+                <li class="p-2">
+                    <div class="container mx-auto w-auto p-4 shadow-md shadow-gray-500 rounded-lg bg-sky-50">
+                        transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                                <svg class="h-[1em] w-[1em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 1L14 6V17L19 12.5V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5M10 18.41C8.75 18.09 7.5 18 6.5 18C5.44 18 4.18 18.19 3 18.5V7.13C3.91 6.73 5.14 6.5 6.5 6.5C7.86 6.5 9.09 6.73 10 7.13V18.41Z" />
+                                </svg>
+                                Назва предмету (Лабораторна робота)
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" />
+                                </svg>
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" />
+                                </svg>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.09 20.21,11.09 20.42,11.3L21.7,12.58C21.91,12.79 21.91,13.14 21.7,13.35M12,18.94L18.06,12.88L20.11,14.93L14.06,21H12V18.94M12,14C7.58,14 4,15.79 4,18V20H10V18.11L14,14.11C13.34,14.03 12.67,14 12,14M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4Z" />
+                                </svg>
+                                Викладач В. В.
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 pl-2 pt-2">
+                                №101
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 hover:text-gray-400 pl-2 pt-1">
+                                <a href="">Google Meet</a>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+                                </svg>
+                                09.00 - 10.20
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="p-2">
+                        <hr>
+                    </div>
+                </li>
+                <li class="p-2">
+                    <div class="container mx-auto w-auto p-4 shadow-md shadow-gray-500 rounded-lg bg-green-20
+                    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1100">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                                <svg class="h-[1em] w-[1em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 1L14 6V17L19 12.5V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5M10 18.41C8.75 18.09 7.5 18 6.5 18C5.44 18 4.18 18.19 3 18.5V7.13C3.91 6.73 5.14 6.5 6.5 6.5C7.86 6.5 9.09 6.73 10 7.13V18.41Z" />
+                                </svg>
+                                Назва предмету (Лекція)
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" />
+                                </svg>
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" />
+                                </svg>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.09 20.21,11.09 20.42,11.3L21.7,12.58C21.91,12.79 21.91,13.14 21.7,13.35M12,18.94L18.06,12.88L20.11,14.93L14.06,21H12V18.94M12,14C7.58,14 4,15.79 4,18V20H10V18.11L14,14.11C13.34,14.03 12.67,14 12,14M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4Z" />
+                                </svg>
+                                Викладач В. В.
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 pl-2 pt-2">
+                                №101
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 hover:text-gray-400 pl-2 pt-1">
+                                <a href="">Google Meet</a>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+                                </svg>
+                                09.00 - 10.20
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="p-2">
+                        <hr>
+                    </div>
+                </li>
+                <li class="p-2">
+                    <div class="container mx-auto w-auto p-4 shadow-md shadow-gray-500 rounded-lg bg-amber-20
+                    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1100">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                                <svg class="h-[1em] w-[1em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 1L14 6V17L19 12.5V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5M10 18.41C8.75 18.09 7.5 18 6.5 18C5.44 18 4.18 18.19 3 18.5V7.13C3.91 6.73 5.14 6.5 6.5 6.5C7.86 6.5 9.09 6.73 10 7.13V18.41Z" />
+                                </svg>
+                                Назва предмету (Екзамен)
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" />
+                                </svg>
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" />
+                                </svg>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.09 20.21,11.09 20.42,11.3L21.7,12.58C21.91,12.79 21.91,13.14 21.7,13.35M12,18.94L18.06,12.88L20.11,14.93L14.06,21H12V18.94M12,14C7.58,14 4,15.79 4,18V20H10V18.11L14,14.11C13.34,14.03 12.67,14 12,14M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4Z" />
+                                </svg>
+                                Викладач В. В.
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 pl-2 pt-2">
+                                №101
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 hover:text-gray-400 pl-2 pt-1">
+                                <a href="">Google Meet</a>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+                                </svg>
+                                09.00 - 10.20
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="p-2">
+                        <hr>
+                    </div>
+                </li>
+                <li class="p-2">
+                    <div class="container mx-auto w-auto p-4 shadow-md shadow-gray-500 rounded-lg bg-red-200"
+                    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110>
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="font-bold sm:text-2xl text-gray-800 pl-2">
+                                <svg class="h-[1em] w-[1em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 1L14 6V17L19 12.5V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5M10 18.41C8.75 18.09 7.5 18 6.5 18C5.44 18 4.18 18.19 3 18.5V7.13C3.91 6.73 5.14 6.5 6.5 6.5C7.86 6.5 9.09 6.73 10 7.13V18.41Z" />
+                                </svg>
+                                Назва предмету (Консультація)
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,3C10.89,3 10,3.89 10,5H3V19H2V21H22V19H21V5C21,3.89 20.11,3 19,3H12M12,5H19V19H12V5M5,11H7V13H5V11Z" />
+                                </svg>
+                            </div>
+                            <div class="grid place-content-center">
+                                <svg class="h-[1.5em] w-[1.5em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" />
+                                </svg>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.09 20.21,11.09 20.42,11.3L21.7,12.58C21.91,12.79 21.91,13.14 21.7,13.35M12,18.94L18.06,12.88L20.11,14.93L14.06,21H12V18.94M12,14C7.58,14 4,15.79 4,18V20H10V18.11L14,14.11C13.34,14.03 12.67,14 12,14M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4Z" />
+                                </svg>
+                                Викладач В. В.
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 pl-2 pt-2">
+                                №101
+                            </div>
+                            <div class="grid place-content-center font-bold sm:text-md text-gray-800 hover:text-gray-400 pl-2 pt-1">
+                                <a href="">Google Meet</a>
+                            </div>
+                            <div class="font-bold sm:text-md text-gray-500 pl-2">
+                                <svg class="h-[1.25em] w-[1.25em] inline" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+                                </svg>
+                                09.00 - 10.20
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="p-2">
+                        <hr>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
