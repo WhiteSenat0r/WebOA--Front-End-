@@ -156,38 +156,32 @@
             <!--Days of week-->
             <div class="flex flex-row flex-wrap p-2 pt-3 font-semibold text-gray-800 transition-all duration-200">
                 <div
-                    class="flex justify-center container mx-auto p-2 bg-gray-100 font-semibold shadow-md shadow-gray-600 rounded-2xl sm:hidden">
+                    class="flex justify-center container mx-auto p-2 bg-gray-200 font-semibold shadow-md shadow-gray-600 rounded-2xl xl:hidden">
                     <span
-                        class="bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto hover:bg-sky-200">Пн</span>
-                    <span class="pt-[0.4em] mx-auto">Вт</span>
-                    <span class="pt-[0.4em] mx-auto">Ср</span>
-                    <span class="pt-[0.4em] mx-auto">Чт</span>
-                    <span class="pt-[0.4em] mx-auto">Пт</span>
-                    <span class="pt-[0.4em] mx-auto">Сб</span>
-                </div>
-                <div
-                    class="flex justify-center container mx-auto p-2 bg-gray-200 font-semibold shadow-md shadow-gray-600 rounded-2xl hidden sm:flex lg:hidden">
+                        class="bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto hover:bg-sky-200 sm:hidden">Пн</span>
+                    <span class="pt-[0.4em] mx-auto sm:hidden">Вт</span>
+                    <span class="pt-[0.4em] mx-auto sm:hidden">Ср</span>
+                    <span class="pt-[0.4em] mx-auto sm:hidden">Чт</span>
+                    <span class="pt-[0.4em] mx-auto sm:hidden">Пт</span>
+                    <span class="pt-[0.4em] mx-auto sm:hidden">Сб</span>
                     <span
-                        class="bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto px-16 hover:bg-sky-200">Пн
+                        class="hidden sm:inline lg:hidden bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto px-16 hover:bg-sky-200">Пн
                         - Вт</span>
-                    <span class="pt-[0.4em] mx-auto px-16">Ср - Чт</span>
-                    <span class="pt-[0.4em] mx-auto px-16">Пт - Сб</span>
-                </div>
-                <div
-                    class="flex justify-center container mx-auto p-2 bg-gray-200 font-semibold shadow-md shadow-gray-600 rounded-2xl hidden lg:flex xl:hidden">
+                    <span class="hidden sm:inline lg:hidden pt-[0.4em] mx-auto px-16">Ср - Чт</span>
+                    <span class="hidden sm:inline lg:hidden pt-[0.4em] mx-auto px-16">Пт - Сб</span>
                     <span
-                        class="bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto px-48 hover:bg-sky-200">Пн
+                        class="hidden lg:inline xl:hidden bg-sky-50 shadow-md shadow-gray-600 border border-gray-200 p-1 rounded-xl mx-auto px-48 hover:bg-sky-200">Пн
                         - Cр</span>
-                    <span class="pt-[0.4em] mx-auto px-48">Чт - Сб</span>
+                    <span class="hidden lg:inline xl:hidden pt-[0.4em] mx-auto px-48">Чт - Сб</span>
                 </div>
-                <div class="flex justify-end font-semibold hidden xl:flex">
-                    <div>
-                        <span class="ml-[144px] mr-[80px] 2xl:ml-[150px] mr-[80px]">Понеділок</span>
-                        <span class="mx-[32px] 2xl:mx-[80px]">Вівторок</span>
-                        <span class="mx-[96px] 2xl:mx-[96px]">Середа</span>
-                        <span class="mx-[44px] 2xl:mx-[90px]">Четвер</span>
-                        <span class="mx-[85px] 2xl:mx-[84px]">П'ятниця</span>
-                        <span class="ml-[48px] 2xl:ml-[86px]">Субота</span>
+                <div class="xl:flex flex justify-end font-semibold hidden">
+                    <div class="pl-20">
+                        <span class="mx-14 2xl:ml-16 2xl:mr-14">Понеділок</span>
+                        <span class="mx-16 2xl:ml-28 2xl:mr-28">Вівторок</span>
+                        <span class="mx-16 2xl:mx-16">Середа</span>
+                        <span class="mx-20 2xl:mx-28">Четвер</span>
+                        <span class="mx-12 2xl:ml-16 2xl:mr-14">П'ятниця</span>
+                        <span class="ml-20 2xl:ml-32 2xl:mr-4">Субота</span>
                     </div>
                 </div>
             </div>
@@ -202,8 +196,8 @@
             </div>
             <!--Lectures-->
             <div
-                class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden sm:flex">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                class="sm:flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden">
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лекція
@@ -238,7 +232,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -273,7 +267,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block lg:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -308,7 +302,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -343,7 +337,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -378,7 +372,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -426,7 +420,7 @@
             <!--Lectures-->
             <div
                 class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лабораторна робота
@@ -461,7 +455,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -496,7 +490,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-orange-400 px-2 text-white">
                         Консультація
@@ -531,7 +525,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -566,7 +560,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -601,7 +595,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -648,8 +642,8 @@
             </div>
             <!--Lectures-->
             <div
-                class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden lg:flex">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                class="lg:flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden">
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лекція
@@ -684,7 +678,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -719,7 +713,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -754,7 +748,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -789,7 +783,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-amber-400 px-2 text-white">
                         Екзамен
@@ -824,7 +818,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -872,7 +866,7 @@
             <!--Lectures-->
             <div
                 class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -907,7 +901,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лабораторна робота
@@ -942,7 +936,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -977,7 +971,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1012,7 +1006,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1047,7 +1041,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1095,7 +1089,7 @@
             <!--Lectures-->
             <div
                 class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -1130,7 +1124,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1165,7 +1159,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block lg:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1200,7 +1194,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1235,7 +1229,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1270,7 +1264,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1317,8 +1311,8 @@
             </div>
             <!--Lectures-->
             <div
-                class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden xl:flex">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                class="xl:flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden">
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лекція
@@ -1353,7 +1347,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1388,7 +1382,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block lg:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1423,7 +1417,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-blue-400 px-2 text-white">
                         Практична робота
@@ -1458,7 +1452,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1493,7 +1487,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1540,8 +1534,8 @@
             </div>
             <!--Lectures-->
             <div
-                class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden xl:flex">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                class="xl:flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden">
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лекція
@@ -1576,7 +1570,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1611,7 +1605,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block lg:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1646,7 +1640,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1681,7 +1675,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1716,7 +1710,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1763,8 +1757,8 @@
             </div>
             <!--Lectures-->
             <div
-                class="flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden xl:flex">
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                class="xl:flex flex-row justify-between flex-wrap p-2 pl-4 sm:pl-10 xl:pl-24 2xl:pl-20 font-semibold text-gray-800 transition-all duration-200 hidden">
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-slate-400 px-2 text-white">
                         Лекція
@@ -1799,7 +1793,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden sm:block sm:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1834,7 +1828,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden lg:block lg:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1869,7 +1863,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1904,7 +1898,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
@@ -1939,7 +1933,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] mt-[0em] md:mt-[-1em] font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
+                <div class="container p-3 mx-auto sm:w-[35%] lg:w-[23%] xl:w-[14%] relative md:bottom-2 font-semibold shadow-md shadow-gray-600 rounded-lg bg-slate-50 hover:bg-blue-50
                 transition ease-in-out hover:scale-[103.5%] duration-300 hidden xl:block xl:invisible">
                     <div class="flex flex justify-start container w-fit rounded-lg bg-green-400 px-2 text-white">
                         Лекція
